@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="vendors/jquery-3.4.1.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div id="full-container">
+        <h1>Password Generator</h1>
+        <input type="checkbox" id="up-alphabet" />
+            <span>Add uppercase?</span>
+            <br />
+            <textarea id="up-alphabet-display" readonly>ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
+            <br />
+            <hr />
+        <input type="checkbox" id="lo-alphabet" checked />
+            <span>Add lowercase?</span>
+            <br />
+            <textarea id="lo-alphabet-display" readonly>abcdefghijklmnopqrstuvwxyz</textarea>
+            <br />
+            <hr />
+        <input type="checkbox" id="numbers" />
+            <span>Add numbers?</span>
+            <br />
+            <textarea id="numbers-display" readonly>1234567890</textarea>
+            <br />
+            <hr />
+        <input type="checkbox" id="dash" />
+            <span>Add dash & underscore?</span>
+            <br />
+            <textarea id="dash-display" readonly>-_</textarea>
+            <br />
+            <hr />
+        <input type="checkbox" id="symbols" />
+            <span>Add other symbols?</span>
+            <br />
+            <textarea id="symbols-display" readonly>#;:`~!@#$%^&*()+={}[]/?\</textarea>
+            <br />
+            <hr />
+        <input type="number" min="2" max="50" value="10" id="length" />
+        <br />
+        <button id="generate">Generate</button>
+        <hr />
+        <div>
+            <p id="output">Your unique ID is: </p>
+        </div>
+    </div>
+</body>
+</html>

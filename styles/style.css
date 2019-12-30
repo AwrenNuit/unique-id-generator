@@ -1,0 +1,80 @@
+body {
+    text-align: center;
+    background-color: rgb(36, 48, 36);
+    color: lightgreen;
+}
+
+h1 {
+    animation: heading 5s alternate infinite;
+}
+
+hr {
+    border: 1px dashed green;
+}
+
+input {
+    background-color: black;
+    color: lightgreen;
+    border: 2px inset green;
+}
+
+textarea {
+    text-align: center;
+    background-color: black;
+    color: lightgreen;
+    border: 2px inset green;
+}
+
+#full-container {
+    width: 550px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid green;
+    border-radius: 100px;
+    background-color: black;
+    animation: borders 3s alternate infinite;
+}
+
+#generate {
+    background-color: black;
+    border: 2px outset green;
+    color: lightgreen;
+    font-size: 1.2em;
+    margin-top: 13px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    width: 110px;
+}
+
+#generate:hover {
+    background-color: rgb(0, 41, 0);
+    font-weight: bold;
+    box-shadow: 0 0 20px lightgreen;
+}
+
+#generate:active {
+    background-color: lightgreen;
+    color: rgb(0, 41, 0);
+    border: 2px inset green;
+}
+
+@keyframes heading {
+    from {
+        color: rgb(131, 218, 131);
+    }
+    to {
+        color: rgb(155, 255, 155);
+    }
+}
+
+@keyframes borders {
+    from {
+        border: 10px solid green;
+    }
+    to {
+        border: 10px solid rgb(0, 168, 0);
+    }
+}
