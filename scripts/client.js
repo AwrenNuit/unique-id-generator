@@ -7,10 +7,15 @@ let charset = ``;
 let tempID = ``;
 
 function generateUniqueID(){
-    updateCharsets();
-    createPassword();
-    appendPasswordToDom();
-    clearVariables();
+    if($(`#length`).val() <= 50 && $(`#length`).val() >= 2){
+        updateCharsets();
+        createPassword();
+        appendPasswordToDom();
+        clearVariables();
+    }
+    else{
+        isLengthInRange();
+    }
 }
 
 function appendPasswordToDom(){
@@ -39,6 +44,11 @@ function createPassword(){
             }
         }
     }
+}
+
+function isLengthInRange(){
+    $(`#length`).val() > 50 ? alert(`Max length is 50`) : '';
+    $(`#length`).val() < 2 ? alert(`Min length is 2`) : '';
 }
 
 function updateCharsets(){
